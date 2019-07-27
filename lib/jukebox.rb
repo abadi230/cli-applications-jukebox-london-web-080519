@@ -50,7 +50,8 @@ end
 
 def run(songs)
   help 
-  while input =! "q"
+  i = 0 
+  while i == 0 
   puts "Please enter a command:"
   input = gets.strip
   case input
