@@ -53,7 +53,8 @@ def run
   puts "Please enter a command:"
   while input =! "q"
   input = gets.strip
-    if input == 'exit'
+  case input
+    when 'exit'
       exit_jukebox
       break
     end 
