@@ -51,11 +51,12 @@ end
 def run 
   help 
   puts "Please enter a command:"
-  input = gets.strip
   until input == "q"
-  if input == 'exit'
-    exit_jukebox
-  end
+  input = gets.strip
+    if input == 'exit'
+      exit_jukebox
+    end
+    
   
   
 end 
