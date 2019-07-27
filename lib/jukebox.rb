@@ -19,18 +19,13 @@ def help
 end
 
 def list (songs)
-  new_songs=[]
+  
   songs.each_with_index do | song, index|
-    # new_songs << "#{index + 1}. #{song}"
+    
     puts "#{index + 1}. #{song}"
   end
-  # new_songs.each do | e |
-  #   puts e
-  #   # binding.pry
-  # end
     
 end
-# list(songs)
 
 def play(songs)
   puts "Please enter a song name or number:"
@@ -42,8 +37,9 @@ def play(songs)
     else 
       result = "Invalid input, please try again"
     end 
+    puts result
   end 
-   puts result
+   
 end 
 
 def exit_jukebox
