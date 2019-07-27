@@ -30,14 +30,14 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp 
-  
+  result = ""
   songs.each_with_index do | song, index|
     if input == song || input.to_i == index + 1
       result = "Playing #{song}"
     else 
       result = "Invalid input, please try again"
     end 
-     result
+     
   end 
    puts result
 end 
